@@ -1,0 +1,86 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+
+# -------------------------
+# Virtual Environment
+# -------------------------
+venv/
+.env/
+env/
+ENV/
+
+# -------------------------
+# Environment Variables (IMPORTANT 🔐)
+# -------------------------
+.env
+*.env
+
+# -------------------------
+# Streamlit
+# -------------------------
+.streamlit/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Jupyter Notebook
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# VS Code / IDE
+# -------------------------
+.vscode/
+.idea/
+
+# -------------------------
+# Data Files (optional ⚠️)
+# -------------------------
+# If your dataset is large, ignore it
+# Otherwise comment this out
+
+# data/raw/*.csv
+# data/processed/*.csv
+
+# -------------------------
+# Model / Cache Files
+# -------------------------
+*.pkl
+*.joblib
+*.h5
+
+# -------------------------
+# Test / Temp Files
+# -------------------------
+tests/__pycache__/
+*.tmp
+*.bak
+
+# -------------------------
+# Build / Deployment
+# -------------------------
+dist/
+build/
+*.egg-info/
+
+# -------------------------
+# Secrets / API Keys 🔐
+# -------------------------
+config/secrets.py
+backend/config/config.py
