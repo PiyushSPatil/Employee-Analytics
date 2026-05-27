@@ -2,52 +2,51 @@
 
 An AI-powered Employee Analytics platform built using **Python, Streamlit, Machine Learning, and LLMs** to analyze employee performance, attrition, recruitment efficiency, compensation fairness, training effectiveness, and workforce intelligence.
 
-🔗 **Live Demo:**  
-https://ai-employee-analytics.streamlit.app/
+🔗 **Live Demo:** [https://ai-employee-analytics.streamlit.app/](https://ai-employee-analytics.streamlit.app/)
 
 ---
 
-# 📌 Features
+## 📌 Features
 
-## 📈 Performance Analysis
+### 📈 Performance Analysis
 - Skill vs Performance Correlation
 - High vs Low Performer Comparison
 - Leadership Gap Detection
 - Weighted Employee Scoring
 - High Skill but Failed Project Detection
 
-## 📉 Attrition Analysis
+### 📉 Attrition Analysis
 - Attrition Distribution
 - Risk Group Identification
 - Work-Life Balance Impact
 - Employee Engagement Insights
 - Retention Analysis
 
-## 🎓 Training Analysis
+### 🎓 Training Analysis
 - Training vs Performance Correlation
 - Mentor Impact Analysis
 - Employees Likely to Benefit from Training
 - Training Effectiveness Insights
 
-## 💰 Compensation Analysis
+### 💰 Compensation Analysis
 - Salary vs Performance Correlation
 - Bonus vs Performance Analysis
 - Underpaid High Performer Detection
 - Benefits vs Attrition Analysis
 
-## 📥 Recruitment Analysis
+### 📥 Recruitment Analysis
 - Hiring Source Effectiveness
 - Recruitment Cost vs Performance
 - High-Cost Low-Performance Hire Detection
 - Conversion Rate Analysis
 
-## 📁 Project Analysis
+### 📁 Project Analysis
 - Project Complexity vs Performance
 - Role-Based Performance Analysis
 - Project Outcome Contradictions
 - Successful Projects with Low Performance
 
-## 🧠 Behavioral Analysis
+### 🧠 Behavioral Analysis
 - Soft Skill Clustering
 - Engagement vs Satisfaction
 - Conflict vs Teamwork Cases
@@ -55,7 +54,7 @@ https://ai-employee-analytics.streamlit.app/
 
 ---
 
-# 🤖 AI Decision Intelligence
+## 🤖 AI Decision Intelligence
 
 - LLM-powered insights using Groq API
 - Business recommendations & reasoning
@@ -64,32 +63,35 @@ https://ai-employee-analytics.streamlit.app/
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend:** Streamlit  
-- **Backend:** Python  
-- **Data Processing:** Pandas, NumPy  
-- **ML:** Scikit-learn  
-- **Visualization:** Matplotlib, Seaborn  
-- **LLM:** Groq (Llama 3.1)  
-- **Deployment:** Streamlit Cloud  
-- **Version Control:** Git & GitHub  
+| Layer | Technology |
+|---|---|
+| Frontend | Streamlit |
+| Backend | Python |
+| Data Processing | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Visualization | Matplotlib, Seaborn |
+| LLM | Groq (Llama 3.1) |
+| Deployment | Streamlit Cloud |
+| Version Control | Git & GitHub |
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
+```
 EMPLOYEE-ANALYSIS-APP/
 │
 ├── backend/
-│ ├── analytics/
-│ ├── data_processing/
-│ ├── llm_engine/
-│ ├── prediction/
-│ └── utils/
+│   ├── analytics/
+│   ├── data_processing/
+│   ├── llm_engine/
+│   ├── prediction/
+│   └── utils/
 │
 ├── frontend/
-│ └── app.py
+│   └── app.py
 │
 ├── config/
 ├── data/
@@ -100,43 +102,59 @@ EMPLOYEE-ANALYSIS-APP/
 ├── requirements.txt
 ├── README.md
 └── .env
-
-
+```
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-## Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/PiyushSPatil/Employee-Analytics
 cd employee-analytics-ai
+```
 
-Install Dependencies
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-🔐 Environment Variables
-Create a .env file:
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
 GROQ_API_KEY=your_api_key_here
+```
 
-▶️ Run Application
+### 4. Run Application
+
+```bash
 streamlit run frontend/app.py
+```
 
-Dataset
+---
 
-Supports:
-Default dataset
-Custom CSV upload
-Expected Features:
-Performance Rating
-Skills Ratings
-Attrition Status
-Compensation Data
-Training Data
-Recruitment Info
-Project Data
+## 📊 Dataset
 
-🚀 Deployment
-Deployed on Streamlit Cloud:
-https://ai-employee-analytics.streamlit.app/
+**Supported Input:**
+- Default built-in dataset
+- Custom CSV upload
+
+**Expected Features:**
+- Performance Rating
+- Skills Ratings
+- Attrition Status
+- Compensation Data
+- Training Data
+- Recruitment Info
+- Project Data
+
+---
+
+## 🚀 Deployment
+
+Deployed on **Streamlit Cloud:**
+[https://ai-employee-analytics.streamlit.app/](https://ai-employee-analytics.streamlit.app/)
