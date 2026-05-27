@@ -1,25 +1,27 @@
+import streamlit as st
+import os
 from groq import Groq
-from config.config import GROQ_API_KEY
 
-# Initialize client
-client = Groq(api_key=GROQ_API_KEY)
+def get_client():
+    try:
+        api_key = st.secrets["GROQ_API_KEY"]
+    except:
+        api_key = os.getenv("GROQ_API_KEY")
+
+    if not api_key:
+        raise ValueError("❌ GROQ_API_KEY not found. Please set it in Streamlit Secrets.")
+
+    return Groq(api_key=api_key)
+
 
 def get_llm_response(prompt):
-    """
-    Send prompt to Groq LLM and return response
-    """
+    client = get_client()
 
-    try:
-        response = client.chat.completions.create(
-            model="llama-3.1-8b-instant",  # powerful model
-            messages=[
-                {"role": "system", "content": "You are an expert HR data analyst."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.7
-        )
+    response = client.chat.completions.create(
+        messages=[{"role": "user", "content": prompt}],
+        model="llama3-8b-8192",
+        temperature=0.3,
+        max_tokens=300
+    )
 
-        return response.choices[0].message.content
-
-    except Exception as e:
-        return f"Error: {str(e)}"
+    return response.choices[0].message.content
